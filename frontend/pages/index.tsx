@@ -4,33 +4,9 @@ import Layout from '@/src/components/layout/index';
 
 export default function Page({ data }: IndexPageProps): JSX.Element {
 	return (
-		<Layout data={data}>
+		<Layout>
 			content
 		</Layout>
 	);
 }
 
-interface IndexPageProps {
-	data: {
-		menus: {
-			headerMenus: any[];
-			footerMenus: any[];
-		}
-	};
-}
-export async function getStaticProps() {
-	const { data, loading, networkStatus } = await client.query({
-	  query: GET_MENUS,
-	});
-  
-	return {
-	  props: {
-		data: {
-			menus: {
-			  headerMenus: data?.headerMenus?.edges,
-			  footerMenus: data?.footerMenus?.edges,
-			},
-		}
-	  },
-	};
-  }
