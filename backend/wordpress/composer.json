@@ -12,7 +12,7 @@
         "imranhsayed/headless-cms": "^1.7",
         "wp-graphql/wp-graphql": "^1.24",
         "wp-graphql/wp-graphql-jwt-authentication": "0.4.0",
-        "pristas-peter/wp-graphql-gutenberg": "0.3.7",
+        "pristas-peter/wp-graphql-gutenberg": "0.4.1",
         "wpackagist-plugin/wpgraphql-acf": "^2.2",
         "wpackagist-plugin/advanced-custom-fields": "5.9.1",
         "yoast/wordpress-seo": "22.7-RC3",

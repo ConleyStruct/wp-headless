@@ -680,17 +680,17 @@
         },
         {
             "name": "pristas-peter/wp-graphql-gutenberg",
-            "version": "v0.3.7",
-            "version_normalized": "0.3.7.0",
+            "version": "v0.4.1",
+            "version_normalized": "0.4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pristas-peter/wp-graphql-gutenberg.git",
-                "reference": "bf0e9290ffab5b6189172fc9721bc644a51d651e"
+                "reference": "bacabca662698871ecc8b297c7af3b5b95d431c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pristas-peter/wp-graphql-gutenberg/zipball/bf0e9290ffab5b6189172fc9721bc644a51d651e",
-                "reference": "bf0e9290ffab5b6189172fc9721bc644a51d651e",
+                "url": "https://api.github.com/repos/pristas-peter/wp-graphql-gutenberg/zipball/bacabca662698871ecc8b297c7af3b5b95d431c1",
+                "reference": "bacabca662698871ecc8b297c7af3b5b95d431c1",
                 "shasum": ""
             },
             "require": {
@@ -698,12 +698,10 @@
                 "voku/simple_html_dom": "4.7.17"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
-                "phpcompatibility/phpcompatibility-wp": "2.1.0",
-                "squizlabs/php_codesniffer": "3.5.4",
-                "wp-coding-standards/wpcs": "2.1.1"
+                "automattic/vipwpcs": "^2.2",
+                "phpcompatibility/phpcompatibility-wp": "^2.1"
             },
-            "time": "2021-01-18T05:47:03+00:00",
+            "time": "2022-12-05T16:02:28+00:00",
             "type": "wordpress-plugin",
             "installation-source": "dist",
             "autoload": {
@@ -718,7 +716,7 @@
             "description": "Query gutenberg blocks with wp-graphql",
             "support": {
                 "issues": "https://github.com/pristas-peter/wp-graphql-gutenberg/issues",
-                "source": "https://github.com/pristas-peter/wp-graphql-gutenberg/tree/v0.3.7"
+                "source": "https://github.com/pristas-peter/wp-graphql-gutenberg/tree/v0.4.1"
             },
             "install-path": "../../wp-content/plugins/wp-graphql-gutenberg"
         },

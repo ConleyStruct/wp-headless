@@ -110,9 +110,9 @@
             'dev_requirement' => false,
         ),
         'pristas-peter/wp-graphql-gutenberg' => array(
-            'pretty_version' => 'v0.3.7',
-            'version' => '0.3.7.0',
-            'reference' => 'bf0e9290ffab5b6189172fc9721bc644a51d651e',
+            'pretty_version' => 'v0.4.1',
+            'version' => '0.4.1.0',
+            'reference' => 'bacabca662698871ecc8b297c7af3b5b95d431c1',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../wp-content/plugins/wp-graphql-gutenberg',
             'aliases' => array(),
