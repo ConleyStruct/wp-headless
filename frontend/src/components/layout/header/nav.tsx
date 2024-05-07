@@ -1,6 +1,6 @@
+import Link from 'next/link'
 
 const Nav = ({headerMenu}: any) => {
-    console.log(headerMenu);
     return (
         <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -17,9 +17,25 @@ const Nav = ({headerMenu}: any) => {
             </div>
             <div className="overflow-hidden w-full lg:h-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm lg:flex-grow">
-                    <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Home</a>
-                    <a href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">About</a>
-                    <a href="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Contact</a>
+                    { headerMenu?.length ? (
+                        headerMenu?.map((item: any) => {
+                            return (
+                                <Link 
+                                  href={item.node?.path} 
+                                  key={item.node?.id}
+                                  className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                                >
+                                    {item.node.label}
+                                </Link>
+                            ) 
+                        })
+                    ) : (
+                        <div className="text-sm lg:flex-grow">
+                            <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Home</a>
+                            <a href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">About</a>
+                            <a href="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Contact</a>
+                        </div>
+                    )}
                 </div>
             </div>
         </nav>

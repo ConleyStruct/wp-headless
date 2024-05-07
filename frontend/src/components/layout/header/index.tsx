@@ -8,7 +8,7 @@ const Header = ({ headerMenu }: any) => {
     
     return (
         <header>
-            <Nav heaederMenu={headerMenu}/>
+            <Nav headerMenu={headerMenu}/>
         </header>
     )
 }
